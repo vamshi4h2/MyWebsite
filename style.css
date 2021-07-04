@@ -93,7 +93,7 @@ html{
 /* home section styling*/
 .home{
     display: flex;
-    background: url("images/penandlappy.jpg") no-repeat center;
+    background: url("Images/penandlappy.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
