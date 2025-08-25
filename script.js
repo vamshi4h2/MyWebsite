@@ -4,10 +4,10 @@ $(document).ready(function(){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
-        }
-        if(this.scroll > 500){
+        } 
+        if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     })
@@ -29,15 +29,3 @@ $(document).ready(function(){
         loop: true
     })*/
 });
-function sendEmail(name, email, message){
-Email.send({
-    Host: "smtp.gmail.com",
-    Username: "vamshik",
-    Password: "rbcafmwpyvacgpjg",
-    secureToken : "c338d85f-1acc-4c67-b197-1d5aa83fc3e4",
-    To : "vamshiladdu418@gmail.com",
-    From : "vamshiladdu418@gmail.com",
-    Subject : '${name} sent you a message',
-    Body : 'Name: ${name} <br/> Email: ${email} <br/> ${subject} <br/> Message: ${message}',
-}).then((message)=>alert("mail sent successfully"));
-}
